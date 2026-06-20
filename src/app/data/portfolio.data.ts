@@ -19,7 +19,7 @@ export interface Project {
   github: string | null;
   demo: string | null;
   image: string;
-  shape: 'mail-sync' | 'chart' | 'sync' | 'kanban' | 'network' | 'form';
+  shape: 'mail-sync' | 'chart' | 'sync' | 'kanban' | 'network' | 'form' | 'inventory';
   iconLabel: string;
 }
 
@@ -158,6 +158,17 @@ export const projects: Project[] = [
     image: 'projects/bullhorn-custom.svg',
     shape: 'form',
     iconLabel: 'Custom workflow forms',
+  },
+  {
+    title: 'Inventory Tracking & Warehouse Management System',
+    description:
+      'Inventory management application in Retool to track items, warehouses, and notes with capacity enforcement, assignment workflows, search and filtering, and live weather integrations.',
+    tech: ['Retool', 'Retool Database', 'SQL', 'JavaScript', 'Open-Meteo API'],
+    github: null,
+    demo: 'https://ayahusseinhassan3107.retool.com/embedded/public/4e91ccea-bdae-4cf1-b712-c4909acd0cda',
+    image: 'projects/inventory.svg',
+    shape: 'inventory',
+    iconLabel: 'Inventory and warehouse dashboard',
   },
 ];
 

@@ -77,6 +77,10 @@
   &--form .project-card__image {
     background: linear-gradient(135deg, #2a2218 0%, #1e293b 100%);
   }
+
+  &--inventory .project-card__image {
+    background: linear-gradient(135deg, #1a2e28 0%, #1e293b 100%);
+  }
 }
 
 .project-card__image {
@@ -101,7 +105,8 @@
   &--sync::before,
   &--kanban::before,
   &--network::before,
-  &--form::before {
+  &--form::before,
+  &--inventory::before {
     content: '';
     position: absolute;
     opacity: 0.15;
@@ -161,6 +166,16 @@
     right: 15px;
     background: var(--accent-warm);
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+
+  &--inventory::before {
+    width: 55px;
+    height: 55px;
+    top: 12px;
+    right: 12px;
+    background: var(--accent);
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    opacity: 0.25;
   }
 }
 
