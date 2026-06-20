@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <rect width="400" height="240" fill="#1e293b"/>
+  <!-- Form panel -->
+  <rect x="80" y="35" width="240" height="170" rx="12" fill="#334155" stroke="#14b8a6" stroke-width="1.5"/>
+  <!-- Form header -->
+  <rect x="80" y="35" width="240" height="36" rx="12" fill="#14b8a6" opacity="0.25"/>
+  <rect x="100" y="48" width="100" height="10" rx="3" fill="#14b8a6" opacity="0.7"/>
+  <!-- Text fields -->
+  <rect x="100" y="85" width="200" height="28" rx="6" fill="#1e293b" stroke="#64748b"/>
+  <rect x="110" y="93" width="80" height="6" rx="2" fill="#64748b"/>
+  <rect x="100" y="125" width="200" height="28" rx="6" fill="#1e293b" stroke="#64748b"/>
+  <rect x="110" y="133" width="120" height="6" rx="2" fill="#64748b"/>
+  <!-- Toggle switch -->
+  <rect x="100" y="168" width="44" height="24" rx="12" fill="#14b8a6" opacity="0.6"/>
+  <circle cx="128" cy="180" r="9" fill="#fff"/>
+  <!-- Dropdown -->
+  <rect x="160" y="165" width="140" height="28" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <polygon points="280,175 290,175 285,183" fill="#f59e0b"/>
+  <!-- Settings gear -->
+  <circle cx="330" cy="60" r="22" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+  <circle cx="330" cy="60" r="8" fill="#f59e0b" opacity="0.5"/>
+  <line x1="330" y1="38" x2="330" y2="44" stroke="#f59e0b" stroke-width="2.5"/>
+  <line x1="330" y1="76" x2="330" y2="82" stroke="#f59e0b" stroke-width="2.5"/>
+  <line x1="308" y1="60" x2="314" y2="60" stroke="#f59e0b" stroke-width="2.5"/>
+  <line x1="346" y1="60" x2="352" y2="60" stroke="#f59e0b" stroke-width="2.5"/>
+  <!-- Decorative shapes -->
+  <polygon points="55,180 75,150 95,180" fill="#14b8a6" opacity="0.2"/>
+  <rect x="340" y="160" width="30" height="30" fill="#f59e0b" opacity="0.15" transform="rotate(45 355 175)"/>
+</svg>

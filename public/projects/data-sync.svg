@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <rect width="400" height="240" fill="#1e293b"/>
+  <!-- Salesforce cloud -->
+  <ellipse cx="120" cy="120" rx="65" ry="45" fill="#00a1e0" opacity="0.85"/>
+  <ellipse cx="95" cy="115" rx="35" ry="28" fill="#00a1e0"/>
+  <ellipse cx="145" cy="110" rx="40" ry="30" fill="#00a1e0"/>
+  <text x="120" y="128" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">SF</text>
+  <!-- Sync arrows -->
+  <path d="M195 105 L215 120 L195 135" fill="#14b8a6"/>
+  <path d="M205 120 L185 120" stroke="#14b8a6" stroke-width="3"/>
+  <path d="M205 120 L225 120" stroke="#14b8a6" stroke-width="3"/>
+  <path d="M215 105 L195 120 L215 135" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+  <circle cx="210" cy="120" r="18" fill="#1e293b" stroke="#14b8a6" stroke-width="2"/>
+  <path d="M204 120 L210 114 L216 120 L210 126 Z" fill="#14b8a6"/>
+  <!-- Bullhorn side -->
+  <rect x="260" y="75" width="100" height="90" rx="12" fill="#334155" stroke="#f59e0b" stroke-width="2"/>
+  <path d="M285 95 L335 95 L310 130 Z" fill="#f59e0b" opacity="0.7"/>
+  <text x="310" y="118" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="12" font-weight="700">BH</text>
+  <rect x="275" y="140" width="70" height="6" rx="2" fill="#64748b"/>
+  <rect x="280" y="152" width="55" height="5" rx="2" fill="#475569"/>
+  <!-- Decorative diamonds -->
+  <rect x="55" y="175" width="20" height="20" fill="#00a1e0" opacity="0.3" transform="rotate(45 65 185)"/>
+  <rect x="330" y="40" width="16" height="16" fill="#f59e0b" opacity="0.3" transform="rotate(45 338 48)"/>
+</svg>

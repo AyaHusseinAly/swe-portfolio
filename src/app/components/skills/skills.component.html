@@ -1,0 +1,34 @@
+<section class="section skills" id="skills">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__eyebrow">Skills</span>
+      <h2 class="section__title">Tech Stack</h2>
+      <p class="section__subtitle">
+        Technologies I use to build robust full stack and mobile applications.
+      </p>
+    </div>
+
+    <div class="skills__grid">
+      @for (category of categories; track category) {
+        @if (skillsByCategory(category).length > 0) {
+          <div class="skill-group">
+            <h3 class="skill-group__title">{{ category }}</h3>
+            <div class="skill-group__list">
+              @for (skill of skillsByCategory(category); track skill.name) {
+                <div class="skill-item">
+                  <div class="skill-item__header">
+                    <span class="skill-item__name">{{ skill.name }}</span>
+                    <span class="skill-item__level">{{ skill.level }}%</span>
+                  </div>
+                  <div class="skill-item__bar">
+                    <div class="skill-item__fill" [style.width.%]="skill.level"></div>
+                  </div>
+                </div>
+              }
+            </div>
+          </div>
+        }
+      }
+    </div>
+  </div>
+</section>

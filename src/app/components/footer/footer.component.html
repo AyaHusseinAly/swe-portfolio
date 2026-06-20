@@ -1,0 +1,18 @@
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="footer__logo">{{ profile.initials }}</span>
+      <p>{{ profile.name }} — {{ profile.title }}</p>
+    </div>
+
+    <div class="footer__links">
+      <a [href]="profile.github" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a [href]="profile.whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a [href]="'mailto:' + profile.email">Email</a>
+    </div>
+
+    <p class="footer__copy">
+      &copy; {{ year }} {{ profile.name }}. Built with Angular.
+    </p>
+  </div>
+</footer>
