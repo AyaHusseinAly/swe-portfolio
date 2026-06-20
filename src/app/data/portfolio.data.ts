@@ -8,6 +8,7 @@ export interface Experience {
   company: string;
   role: string;
   period: string;
+  location: string;
   description: string;
   tech: string[];
 }
@@ -33,16 +34,23 @@ export const profile = {
   email: 'aya.hussein3107@gmail.com',
   github: 'https://github.com/AyaHusseinAly',
   githubHandle: 'AyaHusseinAly',
-  linkedin: 'https://linkedin.com/in/aya-hussein-19a359134',
+  linkedin: 'https://www.linkedin.com/in/aya-hussein-19a359134',
+  linkedinHandle: 'aya-hussein-19a359134',
   whatsapp: 'https://api.whatsapp.com/send/?phone=+201011833038',
   whatsappDisplay: '+20 101 183 3038',
+  phone: 'tel:+201011833038',
+  website: 'https://ayahussein.onrender.com/',
+  websiteDisplay: 'ayahussein.com',
+  workExperiencesUrl: 'https://ayahussein.onrender.com/work-experiences.html',
   photoUrl: 'https://ayahussein.onrender.com/profile-photo.jpg',
   summary:
     "I'm a full stack engineer with 3+ years of hands-on experience building and maintaining real-world applications using Node.js and Angular, along with over 4 years of overall experience in software development. In my previous role, I owned the end-to-end development of multiple features, including designing APIs, integrating with external systems, and ensuring reliable performance in production environments.",
   aboutExtra:
-    'Based in Alexandria, Egypt, I enjoy turning complex problems into elegant, user-friendly solutions. From CRM integrations at Make IT Simple to enterprise platforms at ServiceNow, I bring a full stack mindset to every project.',
+    "I'm currently focused on strengthening my skills in system design, scalability, and modern backend/frontend architecture best practices. Based in Alexandria, Egypt, I enjoy turning complex problems into elegant, user-friendly solutions — from CRM integrations at Make IT Simple to enterprise platforms at ServiceNow.",
+  contactSubtitle:
+    "I'm always interested in new opportunities and exciting projects. Let's work together and bring your ideas to life.",
   yearsOfExperience: 4,
-  heroBadges: ['Node.js', 'Angular', 'Express.js', 'NestJS','SQL', 'AWS'],
+  heroBadges: ['Node.js', 'Angular', 'Express.js', 'NestJS', 'SQL', 'AWS'],
 };
 
 export const stats = [
@@ -70,24 +78,27 @@ export const experience: Experience[] = [
     company: 'ServiceNow Egypt',
     role: 'Senior Software Engineer',
     period: 'Dec 2025 – Present',
+    location: 'Cairo, Egypt',
     description:
-      'Working on PTO request solution covering real business scenarios for enterprise clients.',
+      'Working on a PTO request solution covering real business scenarios for enterprise clients, building reliable workflows and integrations on the ServiceNow platform.',
     tech: ['JavaScript', 'ServiceNow', 'REST APIs'],
   },
   {
     company: 'Make IT Simple (MIS)',
     role: 'Full-Stack Developer',
     period: 'Aug 2022 – Nov 2025',
+    location: 'UK (Remote)',
     description:
-      'Built scalable backend services with Node.js and AWS Lambda, Angular Outlook add-ins with Microsoft Graph, cloud-native dashboards with AWS CDK, and Bullhorn CRM integrations.',
-    tech: ['Node.js', 'Angular', 'AWS Lambda', 'AWS CDK', 'Microsoft Graph API'],
+      'Built scalable backend services with Node.js and AWS Lambda, Angular Outlook add-ins with Microsoft Graph, cloud-native dashboards with AWS CDK, Bullhorn CRM integrations, and a data synchronization system between Bullhorn and Salesforce.',
+    tech: ['Node.js', 'Angular', 'AWS Lambda', 'AWS CDK', 'Microsoft Graph API', 'Salesforce API'],
   },
   {
     company: 'Vodafone Egypt',
     role: 'Full-Stack Developer',
     period: 'Sep 2021 – Jul 2022',
+    location: 'Cairo, Egypt',
     description:
-      'Contributed to the OneNetwork automation platform, building backend services with Python and Django and working with SQL Server and Oracle databases.',
+      'Contributed to the OneNetwork automation platform for large-scale telecom operations, building backend services with Python and Django and working with SQL Server and Oracle databases.',
     tech: ['Python', 'Django', 'SQL Server', 'Oracle', 'SQLAlchemy'],
   },
 ];
@@ -96,8 +107,8 @@ export const projects: Project[] = [
   {
     title: 'Erecruit Outlook Integration Plugin',
     description:
-      'Full-featured Outlook plugin integrated with Bullhorn CRM for recruiters to manage candidate data directly from their inbox.',
-    tech: ['Node.js', 'Angular', 'Microsoft Graph API', 'Azure Functions'],
+      'Full-featured Outlook plugin integrated with Bullhorn CRM, enabling recruiters to manage candidate data from their inbox, match emails to CRM records, and sync interactions in real time using Microsoft Graph and Azure Functions.',
+    tech: ['Node.js', 'Angular', 'Microsoft Graph API', 'Azure Functions', 'Serverless Framework'],
     github: null,
     demo: null,
     image: 'projects/outlook-plugin.svg',
@@ -107,8 +118,8 @@ export const projects: Project[] = [
   {
     title: 'Pay Bill Monitoring & Analytics Dashboard',
     description:
-      'Backend-driven monitoring system to analyze pay/bill data inconsistencies and business indicators within Bullhorn CRM.',
-    tech: ['Node.js', 'AWS Lambda', 'AWS CDK', 'PostgreSQL', 'Sequelize'],
+      'Backend-driven monitoring system to analyze pay/bill data inconsistencies and business indicators within Bullhorn CRM, with drill-down into affected records via AWS Lambda, API Gateway, and PostgreSQL.',
+    tech: ['Node.js', 'AWS Lambda', 'AWS CDK', 'PostgreSQL', 'Sequelize', 'API Gateway'],
     github: null,
     demo: null,
     image: 'projects/analytics-dashboard.svg',
@@ -118,8 +129,8 @@ export const projects: Project[] = [
   {
     title: 'Salesforce Bullhorn Data Sync',
     description:
-      'Middleware integration layer between Salesforce and Bullhorn CRM to synchronize sales and recruitment data.',
-    tech: ['Java', 'Spring MVC', 'Salesforce API', 'Bullhorn REST API'],
+      'Middleware integration layer between Salesforce and Bullhorn CRM to synchronize sales and recruitment data, with entity mapping, validation, and scheduled background jobs.',
+    tech: ['Java', 'Spring MVC', 'Quartz Scheduler', 'Salesforce API', 'Bullhorn REST API'],
     github: null,
     demo: null,
     image: 'projects/data-sync.svg',
@@ -129,7 +140,7 @@ export const projects: Project[] = [
   {
     title: 'Kanban Candidate Management System',
     description:
-      'Configurable Kanban-style visualization on top of Bullhorn CRM with dynamic filtering based on customizable fields.',
+      'Configurable Kanban-style visualization on top of Bullhorn CRM with dynamic filtering based on customizable fields, backed by Node.js APIs and an Angular frontend.',
     tech: ['Node.js', 'Express', 'Angular', 'MySQL'],
     github: null,
     demo: null,
@@ -140,7 +151,7 @@ export const projects: Project[] = [
   {
     title: 'OneNetwork Automation Platform',
     description:
-      'Network automation platform for executing large-scale operations across telecom nodes with parallel command execution.',
+      'Network automation platform for executing large-scale operations across telecom nodes with parallel command execution, feedback processing, and automated reporting.',
     tech: ['Python', 'pandas', 'SQL Server', 'Paramiko', 'Telnet'],
     github: null,
     demo: null,
@@ -151,7 +162,7 @@ export const projects: Project[] = [
   {
     title: 'Bullhorn Workflow Customizations',
     description:
-      'Various Bullhorn CRM customizations for multiple clients — dynamic forms, calculated fields, and conditional UI behavior.',
+      'Various Bullhorn CRM customizations for multiple clients — dynamic forms, calculated fields, conditional UI behavior, and pre/post record creation interactions.',
     tech: ['JavaScript', 'Bullhorn APIs', 'Angular'],
     github: null,
     demo: null,

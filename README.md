@@ -1,8 +1,8 @@
-# Fatma Tarek — Portfolio
+# Aya Hussein — Portfolio
 
 Full stack developer portfolio built with Angular, showcasing skills, experience, and projects.
 
-**Live site:** https://fatma-tarek.github.io/swe-portfolio/
+**Live site:** https://ayahusseinaly.github.io/swe-portfolio/
 
 ## Tech Stack
 
@@ -71,9 +71,9 @@ Replace `public/profile-placeholder.svg` with a real photo when available.
 ```bash
 git init
 git add .
-git commit -m "Initial commit: Fatma Tarek portfolio"
+git commit -m "Initial commit: Aya Hussein portfolio"
 git branch -M main
-git remote add origin https://github.com/Fatma-Tarek/swe-portfolio.git
+git remote add origin https://github.com/AyaHusseinAly/swe-portfolio.git
 git push -u origin main
 ```
 
@@ -83,7 +83,7 @@ git push -u origin main
 2. Go to **Settings** → **Pages**
 3. Under **Build and deployment**, set **Source** to **GitHub Actions**
 4. After the workflow completes, your site will be live at:
-   `https://fatma-tarek.github.io/swe-portfolio/`
+   `https://ayahusseinaly.github.io/swe-portfolio/`
 
 ### Step 4 — Verify deployment
 
@@ -113,10 +113,12 @@ src/app/
 
 ## Contact
 
-- **Email:** fatma.tarek204@gmail.com
-- **GitHub:** [Fatma-Tarek](https://github.com/Fatma-Tarek)
-- **WhatsApp:** +20 109 982 0528
+- **Email:** aya.hussein3107@gmail.com
+- **WhatsApp:** +20 101 183 3038
+- **GitHub:** [AyaHusseinAly](https://github.com/AyaHusseinAly)
+- **LinkedIn:** [aya-hussein-19a359134](https://www.linkedin.com/in/aya-hussein-19a359134)
+- **Website:** [ayahussein.com](https://ayahussein.onrender.com/)
 
 ---
 
-Built with Angular by Fatma Tarek
+Built with Angular by Aya Hussein

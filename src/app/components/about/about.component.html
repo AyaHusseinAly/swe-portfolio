@@ -20,8 +20,16 @@
             <a [href]="'mailto:' + profile.email">{{ profile.email }}</a>
           </li>
           <li>
-            <span class="about__label">Availability</span>
-            <span>Open to opportunities</span>
+            <span class="about__label">WhatsApp</span>
+            <a [href]="profile.whatsapp" target="_blank" rel="noopener noreferrer">{{ profile.whatsappDisplay }}</a>
+          </li>
+          <li>
+            <span class="about__label">LinkedIn</span>
+            <a [href]="profile.linkedin" target="_blank" rel="noopener noreferrer">{{ profile.linkedinHandle }}</a>
+          </li>
+          <li>
+            <span class="about__label">Website</span>
+            <a [href]="profile.website" target="_blank" rel="noopener noreferrer">{{ profile.websiteDisplay }}</a>
           </li>
         </ul>
       </div>
